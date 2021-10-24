@@ -42,11 +42,7 @@ const personalMovieDB = {
     }
   },
   toggleVisibleMyDB() {
-    if (personalMovieDB.privat) {
-      personalMovieDB.privat = false;
-    } else {
-      personalMovieDB.privat = true;
-    }
+    personalMovieDB.privat = !personalMovieDB.privat;
   },
   writeYourGenres() {
     for (let i = 1; i < 2; i += 1) {
